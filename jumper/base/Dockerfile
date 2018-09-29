@@ -34,7 +34,7 @@ RUN install -m 0500 -o 0 -g 0 /root/tmp/jumperd /jumper/sbin/jumperd
 RUN install -m 0600 -o 0 -g 0 /dev/null /jumper/cfg/RevokedKeys
 RUN install -m 0600 -o 0 -g 0 /dev/null /jumper/log/jumper.log
 RUN install -m 0600 -o 0 -g 0 /dev/null /jumper/log/syslog
-RUN install -m 0500 -o 0 -g 0 /root/tmp/etc_passwd /etc/passwd
+RUN install -m 0544 -o 0 -g 0 /root/tmp/etc_passwd /etc/passwd
 RUN install -m 0500 -o 0 -g 0 /root/tmp/etc_shadow /etc/shadow
 RUN install -m 0640 -o 0 -g 1000 /dev/null /jumper/doc/AuthorizedKeysFile
 RUN install -m 0600 -o 1000 -g 1000 /root/tmp/jumper_home_ssh_config /jumper/home/.ssh/config
